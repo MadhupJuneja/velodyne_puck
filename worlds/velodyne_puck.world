@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    
+
+    <!-- A testing model that includes the Velodyne sensor model -->
+    <model name="velodyne">
+      <include>
+        <uri>model://velodyne_VLP16</uri>
+        <pose>5 7 0 0 0 0</pose>
+      </include>
+
+      <!-- Attach the plugin to this model 
+      <plugin name="velodyne_control" filename="./libvelodyne_plugin.so">
+        <velocity>25</velocity>
+        <topicName>/my_velodyne/laser</topicName>
+      </plugin> -->
+    </model>
+
+  </world>
+</sdf>
